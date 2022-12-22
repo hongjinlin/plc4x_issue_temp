@@ -51,7 +51,6 @@ body:
     attributes:
       label: Programming Language
       description: Which language is related to your report? (check all that apply)
-      allowMultiple: false
       options:
         - label: "Java"
         - label: "Go"
@@ -62,7 +61,6 @@ body:
     attributes:
       label: Protocol
       description: Which protocol is related to your report? (check all that apply)
-      allowMultiple: false
       options:
         - label: "AB-Ethernet"
         - label: "ADS /AMS"
