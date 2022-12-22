@@ -33,23 +33,19 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Please describe your issue, including the version of PLC4X and the PLC model or tools being used.
+      description: Please describe your issue, including the PLC model or tools being used.
       placeholder: |
         Please include steps to reproduce your issue.
         
         If this isn't a bug and you have a question or support request, please email issues@plc4x.apache.org with a description of the problem instead of opening this issue.
     validations:
       required: true
-  - type: dropdown
-    id: priority
+  - type: input
+    id: version
     attributes:
-      label: Issue Priority
-      description: What priority is this bug? See https://plc4x.apache.org/issue-priorities.html for the meaning and expectations around issue priorities.
-      options:
-        - "Priority: 3 (minor)"
-        - "Priority: 2 (default / most bugs should be filed as P2)"
-        - "Priority: 1 (data loss / total loss of function)"
-        - "Priority: 0 (outage / urgent vulnerability)"
+      label: Version
+      description: "Which version are you using?"
+      placeholder: "v0.10.0"
     validations:
       required: true
   - type: checkboxes
@@ -58,10 +54,10 @@ body:
       label: Programming Languages
       description: Which languages are related to your report? (check all that apply)
       options:
-        - label: "Java"
-        - label: "Go"
-        - label: "C"
-        - label: "Net"
+        - label: "plc4j"
+        - label: "plc4go"
+        - label: "plc4c"
+        - label: "plc4net"
   - type: checkboxes
     id: protocols
     attributes:

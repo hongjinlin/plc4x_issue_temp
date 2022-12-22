@@ -36,26 +36,16 @@ body:
       description: Please describe your issue
     validations:
       required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Issue Priority
-      description: What priority is this feature? See https://plc4x.apache.org/issue-priorities.html for the meaning and expectations around issue priorities.
-      options:
-        - "Priority: 3 (nice-to-have improvement)"
-        - "Priority: 2 (default / most feature requests should be filed as P2)"
-    validations:
-      required: true
   - type: checkboxes
     id: programming-language
     attributes:
       label: Programming Languages
       description: Which languages are related to your report? (check all that apply)
       options:
-        - label: "Java"
-        - label: "Go"
-        - label: "C"
-        - label: "Net"
+        - label: "plc4j"
+        - label: "plc4go"
+        - label: "plc4c"
+        - label: "plc4net"
   - type: checkboxes
     id: protocols
     attributes:
