@@ -49,8 +49,8 @@ body:
   - type: checkboxes
     id: programming-language
     attributes:
-      label: Programming Language
-      description: Which language is related to your report? (check all that apply)
+      label: Programming Languages
+      description: Which languages are related to your report? (check all that apply)
       options:
         - label: "Java"
         - label: "Go"
@@ -59,8 +59,8 @@ body:
   - type: checkboxes
     id: protocols
     attributes:
-      label: Protocol
-      description: Which protocol is related to your report? (check all that apply)
+      label: Protocols
+      description: Which protocols are related to your report? (check all that apply)
       options:
         - label: "AB-Ethernet"
         - label: "ADS /AMS"
